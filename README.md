@@ -1,3 +1,12 @@
+This repo is an exploration of using GraphQL (specifically Apollo flavored) with Remix. It creates a GraphQL API via `apollo-datasource-rest`, consuming the [public PokéAPI REST API](https://pokeapi.co/) as an exercise to see if lifting code from an existing Apollo Server would still work with Remix loaders.
+
+TO DO:
+- [ ] Figure out server-side caching since we [overwrote the cache](https://github.com/apollographql/apollo-server/issues/3429#issuecomment-824686929) for `apollo-datasource-rest` to circumvent this error:
+
+```
+Cannot read properties of undefined (reading 'fetch')
+```
+
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
